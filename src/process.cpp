@@ -40,3 +40,6 @@ long int Process::UpTime() const { return LinuxParser::UpTime(pid_); }
 
 // Comparison operator (CPU utilization)
 bool Process::operator<(Process const& a) const { return CpuUtilization() < a.CpuUtilization(); }
+
+// Comparison operator (RAM consumption)
+// bool Process::operator<(Process const& a) const { return Ram() < a.Ram(); }
